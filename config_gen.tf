@@ -53,7 +53,6 @@ resource "tls_self_signed_cert" "saml_cert" {
     ? 1
     : 0
   )
-  key_algorithm   = "RSA"
   private_key_pem = tls_private_key.saml_cert[0].private_key_pem
 
   subject {
